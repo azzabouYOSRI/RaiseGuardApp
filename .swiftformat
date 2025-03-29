@@ -1,0 +1,10 @@
+# .swiftformat
+
+--indent 4
+--wraparguments before-first
+--wrapcollections before-first
+--self remove
+--commas inline
+--semicolons never
+--emptybraces spaced
+--stripunusedargs closure-only
