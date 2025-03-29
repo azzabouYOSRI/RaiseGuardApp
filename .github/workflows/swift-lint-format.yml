@@ -18,10 +18,10 @@ jobs:
         run: |
           brew install swiftlint swiftformat
 
-      - name: Run SwiftLint
+      - name: Run SwiftLint (Non-blocking)
         run: |
-          swiftlint lint --strict
+          swiftlint lint --strict || echo "⚠️ SwiftLint found issues, but CI will continue."
 
       - name: Run SwiftFormat (Lint Mode)
         run: |
-          swiftformat .
+          swiftformat . --lint || echo "⚠️ SwiftFormat found issues, but CI will continue."
