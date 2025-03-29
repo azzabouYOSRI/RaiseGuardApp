@@ -24,11 +24,11 @@ jobs:
       - name: Install SonarScanner
         run: brew install sonar-scanner
 
-      - name: Run SonarScanner
+       - name: Run SonarScanner
         run: |
           sonar-scanner \
-            -Dsonar.projectKey=RaiseGuardApp \
-            -Dsonar.organization=yosri-azzabou \
+            -Dsonar.projectKey=azzabouYOSRI_RaiseGuardApp \
+            -Dsonar.organization=azzabouyosri \
             -Dsonar.sources=. \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
