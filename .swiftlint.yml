@@ -1,1 +1,23 @@
+disabled_rules:
+  - trailing_whitespace
+  - line_length  # this is disabled, so no need to configure it below
 
+opt_in_rules:
+  - force_unwrapping
+  - explicit_init
+  - closure_end_indentation
+
+analyzer_rules:
+  - unused_declaration
+
+# Removed the line_length rule config since it's disabled
+
+included:
+  - RaiseGuardApp
+  - RaiseGuardAppTests
+  - RaiseGuardAppUITests
+
+excluded:
+  - Pods
+  - Carthage
+  - Generated
