@@ -24,7 +24,7 @@ jobs:
       - name: Install SonarScanner
         run: brew install sonar-scanner
 
-       - name: Run SonarScanner
+      - name: Run SonarScanner
         run: |
           sonar-scanner \
             -Dsonar.projectKey=azzabouYOSRI_RaiseGuardApp \
